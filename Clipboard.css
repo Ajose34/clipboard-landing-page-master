@@ -1,0 +1,137 @@
+body{
+    text-align: center;
+    color: hsl(210, 10%, 33%);
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+p{
+    color: hsl(201, 11%, 66%);
+}
+h2{
+    font-size: 2rem;
+}
+h1{
+    font-size: 2.5rem;
+}
+button{
+    width: auto;
+    padding: 0 24px;
+    height: 40px;
+    color: #e1f4ff;
+    cursor: pointer;
+    border: none;
+    border-radius: 70px;
+}
+.ios{
+    background-color: #26baa4;
+    margin-right: 16px;
+}
+.mac{
+    background-color: #6173ff;
+}
+header{
+    background-image: url(./images/bg-header-desktop.png);
+    height: 250px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.main-container{
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+
+}
+.container-one{
+    text-align: left;
+    width: 58%;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    width: 20%;
+}
+.ads{
+    margin-top: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+section{
+    margin-bottom: 150px;
+}
+.computer{
+    margin-left: -50px;
+}
+.devices{
+    width: 50%;
+}
+.fifty{
+    width: 48%;
+    margin-inline: auto;
+    margin-bottom: 48px;
+}
+@media (max-width: 431px) {
+    header{
+        max-width: 431px;
+        width: 100%;
+        background-image: url(images/bg-header-mobile.png);
+    }
+    main{
+        margin: 0 30px;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h2 , h3{
+        font-size: 1.5rem;
+    }
+    .ios{
+        margin: 0;
+    }
+    button{
+        width: 100%;
+        margin: 16px 0;
+        margin-inline: auto;
+    }
+    section{
+        margin-bottom: 100px;
+    }
+    .fifty{
+        width: 100%;
+    }.main-container{
+        display: block;
+    }
+    .computer{
+        margin: 0;
+    }
+    .container-one{
+        text-align: center;
+        width: 100%;
+    }
+    .devices{
+        width: 100%;
+    }
+    .cards{
+        display: block;
+    }
+    .card{
+        width: 100%;
+    }
+    .ads{
+        display: block;
+        height: auto;
+        margin-top: 100px;
+    }
+    .full{
+        display: block;
+        justify-content: center;
+        margin-inline: auto;
+        margin-bottom: 50px;
+    }
+}
+
